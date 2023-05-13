@@ -1,4 +1,5 @@
 import spawnEnemy from "./enemy.js";
+import generateScenes from "./scenes.js";
 import spawnEggJar from "./eggJar.js";
 
 // initialize kaboom context
@@ -12,8 +13,9 @@ kaboom({
   debug: true,
 });
 
-// add page title
-add([text("eggStremely"), pos(width() / 5, height() / 10)]);
+generateScenes();
+
+go("game");
 
 const playerInitialXPos = width() / 10;
 const playerInitialYPos = height() - height() / 5;
@@ -65,12 +67,3 @@ keyDown("up", () => {
 keyDown("down", () => {
   player.move(0, playerSpeed);
 });
-
-// spawn an enemy
-// the third argument for colour can either be one of
-// the kaboom colours or an rgb value - e.g. rgb(255, 0, 0)
-spawnEnemy(generateRandomPosition()[0], generateRandomPosition()[1], GREEN); // spawn frog enemy
-spawnEnemy(generateRandomPosition()[0], generateRandomPosition()[1], CYAN); // spawn Mando enemy
-
-// spawn egg jar
-spawnEggJar(generateRandomPosition()[0], generateRandomPosition()[1], WHITE);
