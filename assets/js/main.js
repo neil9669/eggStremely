@@ -1,3 +1,5 @@
+import spawnEnemy from "./enemy.js";
+
 // initialize kaboom context
 kaboom({
   background: [0, 0, 255],
@@ -71,3 +73,9 @@ keyDown("up", () => {
 keyDown("down", () => {
   player.move(0, playerSpeed);
 });
+
+// spawn an enemy
+// the third argument for colour can either be one of
+// the kaboom colours or an rgb value - e.g. rgb(255, 0, 0)
+spawnEnemy(generateRandomPosition()[0], generateRandomPosition()[1], GREEN); // spawn frog enemy
+spawnEnemy(generateRandomPosition()[0], generateRandomPosition()[1], CYAN); // spawn Mando enemy
