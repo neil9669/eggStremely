@@ -1,3 +1,5 @@
+import spawnEnemy from "./enemy.js";
+
 // initialize kaboom context
 kaboom({
   background: [0, 0, 255],
@@ -71,3 +73,6 @@ keyDown("up", () => {
 keyDown("down", () => {
   player.move(0, playerSpeed);
 });
+
+// spawn an enemy
+spawnEnemy(generateRandomPosition()[0], generateRandomPosition()[1]);
