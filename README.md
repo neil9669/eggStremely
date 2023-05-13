@@ -1,3 +1,3 @@
-# the-Resistance
-May the 4th be with you.
-Hackathon:Team_3
+# EggStremely-The-Resistance
+May The 4th Be With You. 
+  Hackathon:Team_3
