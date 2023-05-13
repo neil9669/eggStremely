@@ -13,6 +13,7 @@ kaboom({
 });
 
 generateScenes();
+
 go("game");
 
 const playerInitialXPos = width() / 10;
