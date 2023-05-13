@@ -1,4 +1,5 @@
 import spawnEnemy from "./enemy.js";
+import spawnEggJar from "./eggJar.js";
 
 // initialize kaboom context
 kaboom({
@@ -33,7 +34,7 @@ const player = add([
 const generateRandomPosition = (playerInitialXPos, playerInitialYPos) => {
   const randomXPos = Math.floor(Math.random() * width());
   const randomYPos = Math.floor(Math.random() * height());
-  const distanceFromPlayer = 100;
+  const distanceFromPlayer = 200;
   if (
     randomXPos > playerInitialXPos - distanceFromPlayer &&
     randomXPos < playerInitialXPos + distanceFromPlayer &&
@@ -45,15 +46,6 @@ const generateRandomPosition = (playerInitialXPos, playerInitialYPos) => {
     return [randomXPos, randomYPos];
   }
 };
-
-// add jar of eggs sprite - it will also just be
-// a square until we can add later
-const jar = add([
-  rect(40, 40),
-  pos(generateRandomPosition()[0], generateRandomPosition()[1]),
-  color(0, 255, 0),
-  "jar",
-]);
 
 // set the initial player speed
 let playerSpeed = 120;
@@ -79,3 +71,6 @@ keyDown("down", () => {
 // the kaboom colours or an rgb value - e.g. rgb(255, 0, 0)
 spawnEnemy(generateRandomPosition()[0], generateRandomPosition()[1], GREEN); // spawn frog enemy
 spawnEnemy(generateRandomPosition()[0], generateRandomPosition()[1], CYAN); // spawn Mando enemy
+
+// spawn egg jar
+spawnEggJar(generateRandomPosition()[0], generateRandomPosition()[1], WHITE);
