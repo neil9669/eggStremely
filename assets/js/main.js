@@ -75,4 +75,7 @@ keyDown("down", () => {
 });
 
 // spawn an enemy
-spawnEnemy(generateRandomPosition()[0], generateRandomPosition()[1]);
+// the third argument for colour can either be one of
+// the kaboom colours or an rgb value - e.g. rgb(255, 0, 0)
+spawnEnemy(generateRandomPosition()[0], generateRandomPosition()[1], GREEN); // spawn frog enemy
+spawnEnemy(generateRandomPosition()[0], generateRandomPosition()[1], CYAN); // spawn Mando enemy
