@@ -1,12 +1,19 @@
 # **EggStremely: A Star Wars Game by theResistance**
-
+![logo](./media/images/logo.png)
 ## **Grogu's starving and you're his only hope!!**
 
+**In a galaxy far far away...**
 
-May The 4th Be With You. 
-Hackathon:Team_3 the Resistance
 
-![image info](./screenshot.png)
+The child, Grogu, is aboard a ship with the Frog Lady and her jar of delicious eggs. He's not meant to eat them, but they taste so good!
+
+
+Can you grab as many eggs as you can from the jar, when the Frog lady isn't looking? 
+Be careful, or she'll catch you!
+If you're really smart, you might even get to see your elusive protector, the Mandalorian. 
+But he's not keen on you eating those eggs, either, so that's double trouble!
+
+**May The 4th Be With You.** 
 
 ## Controls & game rules
 
