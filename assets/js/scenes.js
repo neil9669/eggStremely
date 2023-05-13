@@ -20,11 +20,10 @@ const generateScenes = () => {
     // spawn an enemy
     // the third argument for colour can either be one of
     // the kaboom colours or an rgb value - e.g. rgb(255, 0, 0)
-    spawnEnemy(100, 100, GREEN); // spawn frog enemy
-    spawnEnemy(500, 100, CYAN); // spawn Mando enemy
+    spawnEnemy(GREEN); // spawn frog enemy
+    spawnEnemy(CYAN); // spawn Mando enemy
 
-    // spawn the egg jar
-    spawnEggJar(200, 200, WHITE);
+    spawnEggJar(WHITE); // spawn the egg jar
   });
 
   // add the lose scene

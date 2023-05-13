@@ -1,9 +1,12 @@
+import generateRandomPosition from "./utils/generateRandomPosition.js";
 /**
  * creates an enemy object - the function is
  * imported and called in the main.js file
  */
 
-const spawnEnemy = (randPosX, randPosY, colour) => {
+const spawnEnemy = (colour) => {
+  const [randPosX, randPosY] = generateRandomPosition(); // using array destructuring assign variables to the return values
+  console.log(randPosX, randPosY);
   const ENEMY_SIZE = 40; // temporary enemy size until we have a sprite
   const enemy = add([
     rect(ENEMY_SIZE, ENEMY_SIZE), // placeholder until we have a sprite
