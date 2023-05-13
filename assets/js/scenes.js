@@ -1,0 +1,32 @@
+import spawnEnemy from "./enemy.js";
+
+/**
+ * Generates the scenes for the game - called by go("sceneName")
+ */
+const generateScenes = () => {
+  // add welcome screen
+  scene("welcome", () => {
+    add([
+      text("eggStremely"),
+      pos(width() / 2, height() / 2),
+      origin("center"),
+    ]);
+  });
+
+  // add the game scene
+  scene("game", () => {
+    add([text("game"), pos(width() / 2, height() / 10), origin("center")]);
+    // spawn an enemy
+    // the third argument for colour can either be one of
+    // the kaboom colours or an rgb value - e.g. rgb(255, 0, 0)
+    spawnEnemy(100, 100, GREEN); // spawn frog enemy
+    spawnEnemy(100, 100, CYAN); // spawn Mando enemy
+  });
+
+  // add the lose scene
+  scene("lose", (score) => {
+    add([text("lose"), pos(width() / 2, height() / 2), origin("center")]);
+  });
+};
+
+export default generateScenes;
