@@ -17,7 +17,7 @@ loadRoot("../../public/sprites/");
 loadSprite("egg-jar", "egg-jar.png");
 loadSprite("frog-lady", "frog-lady.png");
 loadSprite("mandalorian", "mandalorian.png");
-loadSprite("babyyoda", "grogu.png");
+loadSprite("babyYoda", "grogu.png");
 generateScenes();
 
 go("game");
@@ -72,3 +72,6 @@ keyDown("up", () => {
 keyDown("down", () => {
   player.move(0, playerSpeed);
 });
+
+// canvas focus enables user keyboard input register 
+canvas.focus()
