@@ -9,6 +9,7 @@ const spawnEnemy = (enemySprite) => {
   const ENEMY_SIZE = 40;
   const enemy = add([
     sprite(enemySprite),
+    area(),
     pos(randPosX, randPosY), // random position passed in on main.js
     "enemy", // tagged with enemy to reference later on
   ]);
