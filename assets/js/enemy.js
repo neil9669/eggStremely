@@ -3,11 +3,10 @@
  * imported and called in the main.js file
  */
 
-const spawnEnemy = (randPosX, randPosY, colour) => {
-  const ENEMY_SIZE = 40; // temporary enemy size until we have a sprite
+const spawnEnemy = (randPosX, randPosY, enemySprite) => {
+  const ENEMY_SIZE = 40;
   const enemy = add([
-    rect(ENEMY_SIZE, ENEMY_SIZE), // placeholder until we have a sprite
-    color(colour), // colour of the box until we have a sprite
+    sprite(enemySprite),
     pos(randPosX, randPosY), // random position passed in on main.js
     "enemy", // tagged with enemy to reference later on
   ]);

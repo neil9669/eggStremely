@@ -13,6 +13,10 @@ kaboom({
   debug: true,
 });
 
+loadRoot("../../public/sprites/");
+loadSprite("egg-jar", "egg-jar.png");
+loadSprite("frog-lady", "frog-lady.png");
+loadSprite("mandalorian", "mandalorian.png");
 generateScenes();
 
 go("game");
