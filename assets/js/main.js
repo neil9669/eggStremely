@@ -16,6 +16,9 @@ loadSprite("egg-jar", "egg-jar.png");
 loadSprite("frog-lady", "frog-lady.png");
 loadSprite("mandalorian", "mandalorian.png");
 loadSprite("babyYoda", "grogu.png");
+loadSprite("background-floor-tile", "background-floor-tile.png");
+loadSprite("background-wall-tile", "background-wall-tile.png");
+loadSprite("background-door", "background-door.png");
 generateScenes();
 
 go("welcome");
