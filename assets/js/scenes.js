@@ -64,21 +64,22 @@ const generateScenes = () => {
     // spawn an enemy
     // the third argument for colour can either be one of
     // the kaboom colours or an rgb value - e.g. rgb(255, 0, 0)
-    const frogLady = spawnEnemy("frog-lady"); // spawn frog enemy
-    const mandalorian = spawnEnemy("mandalorian"); // spawn Mando enemy
+    const frogLady = spawnEnemy("frog-lady", score); // spawn frog enemy
+    if (score >= 50) {
+      const mandalorian = spawnEnemy("mandalorian", score); // spawn Mando enemy
+    }
 
     // spawn the egg jar
-    let eggJar = spawnEggJar();
+    const eggJar = spawnEggJar();
 
     // spawn baby yoda
     const babyYoda = spawnBabyYoda();
 
     // check for collision between babyYoda and eggJar
-    babyYoda.collides("egg-jar", () => {
+    babyYoda.onCollide("egg-jar", () => {
       score += 10;
-      destroy(eggJar);
-
-      eggJar = spawnEggJar();
+      burp({ volume: 0.5 });
+      go("game", { tl, score, eggs });
     });
 
     // display score

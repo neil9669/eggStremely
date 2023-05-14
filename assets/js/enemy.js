@@ -4,7 +4,7 @@ import generateRandomPosition from "./utils/generateRandomPosition.js";
  * imported and called in the main.js file
  */
 
-const spawnEnemy = (enemySprite) => {
+const spawnEnemy = (enemySprite, score) => {
   const [randPosX, randPosY] = generateRandomPosition(100, 500); // using array destructuring assign variables to the return values
   let enemyWidth = 50;
   let enemyHeight = 50;
@@ -24,8 +24,8 @@ const spawnEnemy = (enemySprite) => {
   ]);
 
   // set the initial enemy speed
-  let enemyXSpeed = 150;
-  let enemyYSpeed = 150;
+  let enemyXSpeed = 100 + score * 2;
+  let enemyYSpeed = 100 + score * 2;
 
   // add randomness to enemy movement
   enemy.onUpdate(() => {
