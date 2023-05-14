@@ -26,7 +26,7 @@ const generateScenes = () => {
 
     // spawn the egg jar
     spawnEggJar(200, 200, WHITE);
-    spawnBabyYoda(500, 200, RED);
+    spawnBabyYoda(500, 200, "babyyoda");
     
   });
 

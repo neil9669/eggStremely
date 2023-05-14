@@ -1,10 +1,9 @@
 
-const spawnBabyYoda = (randPosX, randPosY, colour) => {
+const spawnBabyYoda = (randPosX, randPosY) => {
     const babyYoda = add([
-      rect(40, 40), // placeholder until we have a sprite
-      pos(randPosX, randPosY),
-      color(colour), // colour of the box until we have a sprite
-      "babyYoda", // tag to reference later on
+        sprite("babyyoda"),
+        pos(randPosX, randPosY),
+        "babyyoda", 
     ]);
 
         //check input on each frame
