@@ -7,6 +7,13 @@ const generateRandomPosition = (playerInitialXPos, playerInitialYPos) => {
   const randomYPos = Math.floor(Math.random() * height());
   const distanceFromPlayer = 200;
   if (
+    randomXPos - 60 < 0 ||
+    randomYPos - 60 < 0 ||
+    randomXPos + 60 > width() ||
+    randomYPos + 60 > height()
+  ) {
+    return generateRandomPosition(playerInitialXPos, playerInitialYPos);
+  } else if (
     randomXPos > playerInitialXPos - distanceFromPlayer &&
     randomXPos < playerInitialXPos + distanceFromPlayer &&
     randomYPos > playerInitialYPos - distanceFromPlayer &&
