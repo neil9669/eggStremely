@@ -20,11 +20,17 @@ const spawnBabyYoda = (randPosX, randPosY, colour) => {
 
             // Handle keyboard input
             onKeyDown(MOVE_LEFT_KEY, () => {
-                babyYoda.move(-movementSpeed, 0);
+                if (babyYoda.pos.x > 0) {
+                    babyYoda.move(-movementSpeed, 0);
+
+                }
+                
             });
 
             onKeyDown(MOVE_RIGHT_KEY, () => {
-                babyYoda.move(movementSpeed, 0);
+                // if (babyYoda.pos.y > 0) {
+                    babyYoda.move(movementSpeed, 0);
+                // }
  
             });
 
