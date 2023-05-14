@@ -6,7 +6,7 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
 <h2 align="center"><img src="https://i.ibb.co/TYvTXz1/Example-CI.png"></h2>
 
-## User Experience (UX)
+## User Experience (UX)    
 
 -   ### User stories
 

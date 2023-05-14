@@ -1,5 +1,6 @@
 import spawnEnemy from "./enemy.js";
 import spawnEggJar from "./eggJar.js";
+import spawnBabyYoda from "./babyYoda.js";
 
 /**
  * Generates the scenes for the game - called by go("sceneName")
@@ -20,10 +21,12 @@ const generateScenes = () => {
     // spawn an enemy
     // the third argument for colour can either be one of
     // the kaboom colours or an rgb value - e.g. rgb(255, 0, 0)
-    spawnEnemy(GREEN); // spawn frog enemy
-    spawnEnemy(CYAN); // spawn Mando enemy
+    spawnEnemy(100, 100, "frog-lady"); // spawn frog enemy
+    spawnEnemy(500, 100, "mandalorian"); // spawn Mando enemy
 
-    spawnEggJar(WHITE); // spawn the egg jar
+    // spawn the egg jar
+    spawnEggJar();
+    spawnBabyYoda();
   });
 
   // add the lose scene
