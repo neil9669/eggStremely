@@ -16,6 +16,14 @@ const generateScenes = () => {
       area(),
       "start-text",
     ]);
+    const instructionsText = add([
+      text("How to play"),
+      pos((width() / 4) * 3, height() / 2 + 50),
+      scale(0.5),
+      origin("center"),
+      area(),
+      "instructions-text",
+    ]);
 
     const babyYoda = add([
       sprite("babyYoda"),
@@ -25,12 +33,32 @@ const generateScenes = () => {
     ]);
 
     onClick("start-text", () => {
-      go("game", {tl: 10, score: 0, eggs: 0});
+      go("game", { tl: 10, score: 0, eggs: 0 });
+    });
+
+    onClick("instructions-text", () => {
+      go("instructions");
+    });
+  });
+
+  // add instructions screen
+  scene("instructions", () => {
+    add([
+      text("Go back"),
+      pos(100, 525),
+      scale(0.5),
+      origin("left"),
+      area(),
+      "back",
+    ]);
+
+    onClick("back", () => {
+      go("welcome");
     });
   });
 
   // add the game scene
-  scene("game", ({tl, score, eggs}) => {
+  scene("game", ({ tl, score, eggs }) => {
     layers(["bg", "game", "ui"], "game");
     add([text("game"), pos(width() / 2, height() / 10), origin("center")]);
     // spawn an enemy
@@ -44,16 +72,16 @@ const generateScenes = () => {
 
     // spawn baby yoda
     spawnBabyYoda();
-    
+
     // display score
     add([
-        text("Score:0"),
-        pos(10, 0),
-        layer("ui"),
-        {
-          value: score,
-        },
-        scale(0.4),
+      text("Score:0"),
+      pos(10, 0),
+      layer("ui"),
+      {
+        value: score,
+      },
+      scale(0.4),
     ]);
     // Display time left
     add([
@@ -70,7 +98,6 @@ const generateScenes = () => {
       layer("ui"),
       scale(0.4),
     ]);
-    
   });
 
   // add the lose scene
