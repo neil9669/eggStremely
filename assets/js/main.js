@@ -17,6 +17,7 @@ loadRoot("../../public/sprites/");
 loadSprite("egg-jar", "egg-jar.png");
 loadSprite("frog-lady", "frog-lady.png");
 loadSprite("mandalorian", "mandalorian.png");
+loadSprite("babyyoda", "grogu.png");
 generateScenes();
 
 go("game");
