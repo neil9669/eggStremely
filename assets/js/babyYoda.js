@@ -1,5 +1,5 @@
 const spawnBabyYoda = () => {
-  const babyYoda = add([sprite("babyYoda"), area(), pos(200, 200), "babyYoda"]);
+  const babyYoda = add([sprite("babyYoda"), area(), pos(100, 500), "babyYoda"]);
 
   //check input on each frame
   babyYoda.onUpdate(() => {

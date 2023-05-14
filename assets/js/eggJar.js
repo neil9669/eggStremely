@@ -5,7 +5,7 @@ import generateRandomPosition from "./utils/generateRandomPosition.js";
  * imported and called in the main.js file
  */
 const spawnEggJar = () => {
-  const [randPosX, randPosY] = generateRandomPosition(); // using array destructuring assign variables to the return values
+  const [randPosX, randPosY] = generateRandomPosition(100, 500); // using array destructuring assign variables to the return values
   const eggJar = add([
     sprite("egg-jar"),
     area(),

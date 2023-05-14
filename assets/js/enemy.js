@@ -5,8 +5,17 @@ import generateRandomPosition from "./utils/generateRandomPosition.js";
  */
 
 const spawnEnemy = (enemySprite) => {
-  const [randPosX, randPosY] = generateRandomPosition(); // using array destructuring assign variables to the return values
-  const ENEMY_SIZE = 40;
+  const [randPosX, randPosY] = generateRandomPosition(100, 500); // using array destructuring assign variables to the return values
+  let enemyWidth = 50;
+  let enemyHeight = 50;
+  if (enemySprite === "frog-lady") {
+    enemyWidth = 50;
+    enemyHeight = 56;
+  } else if (enemySprite === "mandalorian") {
+    enemyWidth = 50;
+    enemyHeight = 61;
+  }
+
   const enemy = add([
     sprite(enemySprite),
     area(),
@@ -23,11 +32,17 @@ const spawnEnemy = (enemySprite) => {
     let randDir = rand() * 10 >= 5 ? rand() * 10 : rand() * -10; // generate random number for shifting position slightly so we don't have to change the speed
 
     // if the enemy hits the edge of the screen, reverse the direction
-    if (enemy.pos.x > width() - ENEMY_SIZE || enemy.pos.x < 0) {
+    if (
+      (enemy.pos.x + enemyWidth > width() && enemyXSpeed > 0) ||
+      (enemy.pos.x <= 0 && enemyXSpeed < 0)
+    ) {
       enemyXSpeed = -enemyXSpeed;
       enemy.pos.y = enemy.pos.y + randDir;
     }
-    if (enemy.pos.y > height() - ENEMY_SIZE || enemy.pos.y < 0) {
+    if (
+      (enemy.pos.y > height() - enemyHeight && enemyYSpeed > 0) ||
+      (enemy.pos.y < 0 && enemyYSpeed < 0)
+    ) {
       enemyYSpeed = -enemyYSpeed;
       enemy.pos.x = enemy.pos.x + randDir;
     }
