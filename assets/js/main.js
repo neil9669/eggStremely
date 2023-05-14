@@ -18,7 +18,7 @@ loadSprite("mandalorian", "mandalorian.png");
 loadSprite("babyYoda", "grogu.png");
 generateScenes();
 
-go("game");
+go("welcome");
 
 const playerInitialXPos = width() / 10;
 const playerInitialYPos = height() - height() / 5;
@@ -51,5 +51,5 @@ keyDown("down", () => {
   player.move(0, playerSpeed);
 });
 
-// canvas focus enables user keyboard input register 
-canvas.focus()
+// canvas focus enables user keyboard input register
+canvas.focus();

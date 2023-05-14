@@ -8,11 +8,25 @@ import spawnBabyYoda from "./babyYoda.js";
 const generateScenes = () => {
   // add welcome screen
   scene("welcome", () => {
-    add([
-      text("eggStremely"),
-      pos(width() / 2, height() / 2),
+    const startText = add([
+      text("Start Game"),
+      pos((width() / 4) * 3, height() / 2),
+      scale(0.5),
+      origin("center"),
+      area(),
+      "start-text",
+    ]);
+
+    const babyYoda = add([
+      sprite("babyYoda"),
+      pos(width() / 3, height() / 2),
+      scale(5),
       origin("center"),
     ]);
+
+    onClick("start-text", () => {
+      go("game");
+    });
   });
 
   // add the game scene
