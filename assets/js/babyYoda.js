@@ -1,9 +1,10 @@
 
 const spawnBabyYoda = (randPosX, randPosY) => {
     const babyYoda = add([
-        sprite("babyyoda"),
+        sprite("babyYoda"),
+        area(),
         pos(randPosX, randPosY),
-        "babyyoda", 
+        "babyYoda", 
     ]);
 
         //check input on each frame
