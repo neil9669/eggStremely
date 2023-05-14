@@ -1,5 +1,6 @@
 import spawnEnemy from "./enemy.js";
 import spawnEggJar from "./eggJar.js";
+import spawnBabyYoda from "./babyYoda.js";
 
 /**
  * Generates the scenes for the game - called by go("sceneName")
@@ -25,6 +26,8 @@ const generateScenes = () => {
 
     // spawn the egg jar
     spawnEggJar(200, 200, WHITE);
+    spawnBabyYoda(500, 200, "babyyoda");
+    
   });
 
   // add the lose scene
