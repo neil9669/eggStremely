@@ -32,6 +32,8 @@ const spawnBabyYoda = () => {
       babyYoda.move(0, movementSpeed);
     });
   });
+
+  return babyYoda;
 };
 
 export default spawnBabyYoda;

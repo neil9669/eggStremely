@@ -12,6 +12,8 @@ const spawnEggJar = () => {
     pos(randPosX, randPosY),
     "egg-jar", // tag to reference later on
   ]);
+
+  return eggJar;
 };
 
 export default spawnEggJar;
