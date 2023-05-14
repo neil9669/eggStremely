@@ -1,6 +1,4 @@
-import spawnEnemy from "./enemy.js";
 import generateScenes from "./scenes.js";
-import spawnEggJar from "./eggJar.js";
 
 // initialize kaboom context
 kaboom({
@@ -13,9 +11,14 @@ kaboom({
   debug: true,
 });
 
+loadRoot("../../public/sprites/");
+loadSprite("egg-jar", "egg-jar.png");
+loadSprite("frog-lady", "frog-lady.png");
+loadSprite("mandalorian", "mandalorian.png");
+loadSprite("babyYoda", "grogu.png");
 generateScenes();
 
-go("game");
+go("welcome");
 
 const playerInitialXPos = width() / 10;
 const playerInitialYPos = height() - height() / 5;
@@ -28,26 +31,6 @@ const player = add([
   color(255, 0, 0),
   "player",
 ]);
-
-/**
- * function to generate a random position that is
- * a set distance away from the player
- */
-const generateRandomPosition = (playerInitialXPos, playerInitialYPos) => {
-  const randomXPos = Math.floor(Math.random() * width());
-  const randomYPos = Math.floor(Math.random() * height());
-  const distanceFromPlayer = 200;
-  if (
-    randomXPos > playerInitialXPos - distanceFromPlayer &&
-    randomXPos < playerInitialXPos + distanceFromPlayer &&
-    randomYPos > playerInitialYPos - distanceFromPlayer &&
-    randomYPos < playerInitialYPos + distanceFromPlayer
-  ) {
-    return generateRandomPosition(playerInitialXPos, playerInitialYPos);
-  } else {
-    return [randomXPos, randomYPos];
-  }
-};
 
 // set the initial player speed
 let playerSpeed = 120;
@@ -67,3 +50,6 @@ keyDown("up", () => {
 keyDown("down", () => {
   player.move(0, playerSpeed);
 });
+
+// canvas focus enables user keyboard input register
+canvas.focus();

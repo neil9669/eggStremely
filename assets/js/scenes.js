@@ -1,5 +1,6 @@
 import spawnEnemy from "./enemy.js";
 import spawnEggJar from "./eggJar.js";
+import spawnBabyYoda from "./babyYoda.js";
 
 /**
  * Generates the scenes for the game - called by go("sceneName")
@@ -7,11 +8,25 @@ import spawnEggJar from "./eggJar.js";
 const generateScenes = () => {
   // add welcome screen
   scene("welcome", () => {
-    add([
-      text("eggStremely"),
-      pos(width() / 2, height() / 2),
+    const startText = add([
+      text("Start Game"),
+      pos((width() / 4) * 3, height() / 2),
+      scale(0.5),
+      origin("center"),
+      area(),
+      "start-text",
+    ]);
+
+    const babyYoda = add([
+      sprite("babyYoda"),
+      pos(width() / 3, height() / 2),
+      scale(5),
       origin("center"),
     ]);
+
+    onClick("start-text", () => {
+      go("game");
+    });
   });
 
   // add the game scene
@@ -20,11 +35,14 @@ const generateScenes = () => {
     // spawn an enemy
     // the third argument for colour can either be one of
     // the kaboom colours or an rgb value - e.g. rgb(255, 0, 0)
-    spawnEnemy(100, 100, GREEN); // spawn frog enemy
-    spawnEnemy(500, 100, CYAN); // spawn Mando enemy
+    spawnEnemy("frog-lady"); // spawn frog enemy
+    spawnEnemy("mandalorian"); // spawn Mando enemy
 
     // spawn the egg jar
-    spawnEggJar(200, 200, WHITE);
+    spawnEggJar();
+
+    // spawn baby yoda
+    spawnBabyYoda();
   });
 
   // add the lose scene
