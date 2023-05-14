@@ -55,6 +55,31 @@ The brief was to design and code a game with the Star Wars theme for the Code In
 <br>
 <br>
 
+## Judging Criteria
+
+
+How much fun is the game to play?
+
+The project uses an original or innovative idea, design, or implementation.
+
+The project was well-planned and executed, using GitHub Projects.
+
+Project uses (or expands upon) the provided readme template.
+
+The project focus is realistic, and has an overall sense of completeness.
+<br>
+<br>
+
+## Technologies
+
+* Kaboom
+* HTML
+* CSS
+* GitHub (Git version control and deployment)
+* Photoshop (assets)
+* Figma (wireframes and mockups)
+<br>
+
 ## Wireframes, Prototypes, Ideas in the Planning Stage and Accompanying Images
 
 <br>

@@ -29,6 +29,7 @@ Live link for the game (deployed via GitHub pages): https://eggstremely.plamersa
 
 <br>
 <br>
+
 ## Introduction
 <br>
 <br>
@@ -54,6 +55,7 @@ The brief was to design and code a game with the Star Wars theme for the Code In
 * Matt Stockman
 <br>
 <br>
+
 
 ## Wireframes, Prototypes, Ideas in the Planning Stage and Accompanying Images
 
