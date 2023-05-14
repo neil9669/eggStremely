@@ -25,12 +25,13 @@ const generateScenes = () => {
     ]);
 
     onClick("start-text", () => {
-      go("game");
+      go("game", {tl: 10, score: 0, eggs: 0});
     });
   });
 
   // add the game scene
-  scene("game", () => {
+  scene("game", ({tl, score, eggs}) => {
+    layers(["bg", "game", "ui"], "game");
     add([text("game"), pos(width() / 2, height() / 10), origin("center")]);
     // spawn an enemy
     // the third argument for colour can either be one of
@@ -43,6 +44,33 @@ const generateScenes = () => {
 
     // spawn baby yoda
     spawnBabyYoda();
+    
+    // display score
+    add([
+        text("Score:0"),
+        pos(10, 0),
+        layer("ui"),
+        {
+          value: score,
+        },
+        scale(0.4),
+    ]);
+    // Display time left
+    add([
+      text("Time left:" + parseInt(tl)),
+      pos(550, 0),
+      layer("ui"),
+      scale(0.4),
+    ]);
+
+    // Display eggs collected
+    add([
+      text("Eggs collected:" + parseInt(eggs)),
+      pos(210, 0),
+      layer("ui"),
+      scale(0.4),
+    ]);
+    
   });
 
   // add the lose scene
