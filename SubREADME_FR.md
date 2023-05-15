@@ -72,12 +72,14 @@ The project focus is realistic, and has an overall sense of completeness.
 
 ## Technologies
 
-* Kaboom
+* Kaboomjs.com
+* JavaScript
 * HTML
 * CSS
 * GitHub (Git version control and deployment)
 * Photoshop (assets)
 * Figma (wireframes and mockups)
+ 
 <br>
 
 ## Wireframes, Prototypes, Ideas in the Planning Stage and Accompanying Images
@@ -130,25 +132,6 @@ B) Agreed Second Meeting
  iv) The primary obstacle will be the frog lady who will initially randomly move around the screen. With increased difficulty, she will get faster, she will start moving towards Baby Yoda, and/or the Mandalorian character will appear to also try to stop Baby Yoda. 
  v) If we have time, we may also try adding other obstacles
 
-A)
-
-1 - Baby Yoda picks eggs (tap on the screen).
-2 - frog lady's hands appear on the screen.
-3 - frog lady's head appears on the screen.
-4 - if baby Yoda picks an egg when the frog lady's head peeps out on the screen, he loses 1 life.
-5 - each time baby Yoda eats 10 eggs his level increases by 1.
-6 - whenever baby Yoda's level increases, the frog lady's head appears quicker on the screen
-7 - the game ends when baby Yoda runs out of lives
-8 - Whenever baby Yoda picks an egg the score increases
-
-B)
-
-1. The dynamics of the game are a little different now: 
- i) There will be a setting such as a field or a spaceship.
- ii) The jar of eggs will populate in a random position in the field. 
- iii) Baby Yoda/The child/Grogu's objective will be to make his way to the jar of eggs using, which can be controlled using the directional buttons
- iv) The primary obstacle will be the frog lady who will initially randomly move around the screen. With increased difficulty, she will get faster, she will start moving towards Baby Yoda, and/or the Mandalorian character will appear to also try to stop Baby Yoda. 
- v) If we have time, we may also try adding other obstacles
 
 2. As suggested by Peter, we will use KaboomJS to create the game (https://kaboomjs.com/) as it has lots of built-in methods to make development easier and faster
 
@@ -159,12 +142,69 @@ B)
 3. the possibility of different coloured eggs granting the player a extra lives/ points.
 4. timer? Sabre the lights up for part of the bar showing how many lives are left
 
+## EPICS / USER STORIES
+
+AGILE GAME DEVELOPMENT / EPICS / USER STORIES
+
+Ideas for structure of this came from: https://blog.agilegamedevelopment.com/2016/04/user-story-mapping-for-games-example.html
+
+1)
+
+"Big Hairy Audacious Goal" or BHAG:
+
+I am Grogu and I need to eat as many eggs from the jar as possible, 
+but avoid the Frog Lady herself and the Mandalorian or they'll stop me!!!
+
+2.) 
+Break the BHAG down into some smaller epic stories...
+
+- As Grogu I want to eat as many eggs as possible
+- As Grogu I want to avoid the Frog Lady
+- As Grogu I want to avoid the Mandalorian
+- As Grogu I want to avoid any other obstacles between me and those delicious eggs!
+- As Grogu I want to move as fast as possible and dodge obstacles
+- As Grogu I want to pick up points and live longer to play for as long as possible.
+- As Grogu I want to be able to use the Force to access advanced features of the game.
+
+3. USER STORIES
+
+The above 'as Grogu' epics were each attached to game functions and all issues/ User Stories (included ones listed below with 'player') were mapped on the Kanban Board, labelled according to their MoSCoW priority (Must have, Should have, Could have, Won't have):
+
+https://github.com/users/neil9669/projects/4
+
+<br>
+List of User Stories and other tasks planned in Agile development can be found here: 
+https://github.com/neil9669/eggStremely/issues  
+<br>
+USER STORIES WITH 'PLAYER':
+
+* As the player, I want the rules and aim of the game to be clear so that I can play easily and enjoy the process of getting into the game.
+
+* As the player, I want to make progress through the game with clear opportunities and enough obstacles to keep things interesting.
+
+* As the player, I want to be able to able to manipulate the character using the mouse, touch or keyboard in a way that's easy to remember / consistent with how manouvers work in other games.
+
+* As a player I can see my score at the end of the game so that improve on my score next time.
+
+* As a player I can clearly see characters and obstacles on the screen so that I am less likely to be disadvantaged by a visual impairment.
+
+* As a player I can see the number of points/ lives I'm picking up illustrated clearly on the screen so that I can see how I'm doing and assess how many risks I can afford to take.
+
+* As a player it is clear and achievable how to win at the game - even if this just means getting as high a score as possible compared to the last time I played. Progress shouldn't be made impossible by obstacles, so that can feel I've had a positive user experience!
+
+* As a the player I can manipulate the character easily using the mouse, touch or keyboard in a way that's easy to remember / consistent with how manouvering work in other games so that I can get into enjoying the game without getting confused about the basics.
+
+* As a player I can see the aim and rules of the game at the start so that I can start playing with minimum fuss and enjoy getting into the game.
+
+<br>
+
 ## Controls & game rules
 
-* Arrow keys - move
-* Space bar - jump
-* Left Shift - use force
-* Eat all the soup to progress!
+* Use the arrow keys to move "The child":
+* ⬆ - Move "The child" up
+ 
+* "The child" needs to eat as many eggs as he can before getting caught!
+<br>
 
 ### Deployed link
 
