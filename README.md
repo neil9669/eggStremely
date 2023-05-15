@@ -34,7 +34,20 @@ May The 4th Be With You.
   
  ## Resources created 
   
- * 'Using Terminal, Git and Github' by team member Stephen Dawson: https://docs.google.com/document/d/1NGC2ISKTVbaYKec6kTXVlcb3DNHHIrvRwuCfBkNa-To/edit?usp=sharing 
+ * 'Using Terminal, Git and Github' by team member Stephen Dawson: https://docs.google.com/document/d/1NGC2ISKTVbaYKec6kTXVlcb3DNHHIrvRwuCfBkNa-To/edit?usp=sharing
+
+ * 'Using sound audio effects' created by Neil and Stephen Dawson:
+  https://code-institute-room.slack.com/files/U050ACTDD41/F058D8U6MUY/frog-lady-double.mp3
+  https://code-institute-room.slack.com/files/U050ACTDD41/F05791XKBE3/this-is-the-way-mando.mp3
+  https://code-institute-room.slack.com/files/U050ACTDD41/F057S2TQ1FE/grogu-1.mp3
+  
+ * 'Using figma to wireframe' created by team member Stephen Dawson, Dario, Farah, Neil and Oluwaseun as contributor: 
+ https://www.figma.com/file/iAdS8KU7bo90WYfBf4VAeZ/Grogu's-Eats-Eggs?type=design&node-id=0-1&t=FxbdyMbdHLoxRLvZ-0
+ 
+ 
+ 
+ 
+  
   
  ## Credits 
   
