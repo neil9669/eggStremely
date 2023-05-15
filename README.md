@@ -58,7 +58,11 @@ The brief was to design and code a game with the Star Wars theme for the Code In
 
 
 ## Wireframes, Prototypes, Ideas in the Planning Stage and Accompanying Images
+<br>
 
+**Source Material**
+<br>
+<p align="center"><img src="./mediaREADME/images/sourceImage.png" alt="source image, the Mandalorian" width="50%"/></p>
 <br>
 
 1. This was the first visualisation of the game, in the initial stages when the player is only up against the Frog Lady (by Stephen Dawson):
@@ -102,6 +106,7 @@ The game is browser based and deployed via GitHub pages
 ## Credits
 
 * [Be sure to credit any assets that are not yours](https://www.example.com)
-* [Member 1 Linkedin](https://www.linkedin.com)
+* Source image from the Mandalorian was taken from the Irish Sun (https://www.thesun.ie/tv/6132470/the-mandalorian-baby-yoda-eats-eggs-theory/)
+
 * [Member 2 Linkedin](https://www.linkedin.com)
 * [etc. etc.](https://www.example.com)

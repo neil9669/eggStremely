@@ -47,6 +47,10 @@ The brief was to design and code a game with the Star Wars theme for the Code In
 **Team members (CI students and alumni):**
 <br>
 
+**CI Team Facilitator: Joy Zadan**
+<br>
+<br>
+
 * Stephen Dawson (https://www.linkedin.com/in/sdstephendawson/)
 * Dario Covella  (http://linkedin.com/in/dariocovella)
 * Neil
@@ -137,18 +141,24 @@ B) Agreed Second Meeting
 As suggested by Peter, we used KaboomJS to create the game (https://kaboomjs.com/) as it has lots of built-in methods to make development easier and faster
 <br>
 
-### FEATURES: 
+## FEATURES: 
 
-1. Scoreboard - just to show score in the one game. scores won't be saved. 
-2. An infinite number of eggs rather than a set number in the jar, 
-3. Timer and Sabre that lights up for part of the bar, illustrating how many lives the player has
+1. Scoreboard - just to show score in the one game. Scores won't be saved. 
+2. An infinite number of eggs rather than a set number in the jar. 
+3. Timer and Sabre that lights up for part of the bar, illustrating how many lives the player has.
+4. Characters 'the Child', the Mandalorian and the Frog Lady
+5. Sound! A burping sound when the Child eats eggs and noises when characters collide etc.
+6. Start and End screens.
 <br>
 <br>
-THE IMAGE SHOWS THE GAME'S SCORE FEATURE, TIMER & NUMBER OF EGGS COLLECTED BEING RECORDED:
+THE IMAGE BELOW SHOWS THE GAME'S SCORE FEATURE, TIMER & NUMBER OF EGGS COLLECTED BEING RECORDED:
 <br>
 <br>
 <p align="center"><img src="./mediaREADME/images/timerScoreEggs.png" alt="features" width="50%"/></p>
 <br>
+THE IMAGE BELOW SHOWS THE START SCREEN
+<br>
+<p align="center"><img src="./mediaREADME/images/start.png" alt="features" width="50%"/></p>
 <br>
 
 <br>
@@ -157,7 +167,9 @@ THE IMAGE SHOWS THE GAME'S SCORE FEATURE, TIMER & NUMBER OF EGGS COLLECTED BEING
 ### FUTURE FEATURES:
 
 1. The possibility of different coloured eggs granting the player a extra lives/ points.
-2. Grogu the character to be able to use the Force in an advanced level of the game, a place bar would let him use this to get closer to the jar of eggs.
+2. Grogu the character to be able to use the Force in an advanced level of the game, a space bar would let him use this to get closer to the jar of eggs.
+3. More sounds and Star Wars music.
+4. Scores saved to a database or gspread API (Python), so that user can see how other players have performed.
 <br>
 <br>
 
@@ -228,7 +240,7 @@ We communicated via the comments attached to each issue.
 * "The child" needs to eat as many eggs as he can before getting caught!
 <br>
 
-### Deployed link
+## Deployed link
 
 [Click here to play!](https://eggstremely.plamersaurus.co.uk/)
 
@@ -238,9 +250,22 @@ The game is browser based and deployed via GitHub pages
 
 * 'Using Terminal, Git and Github' by team member Stephen Dawson: https://docs.google.com/document/d/1NGC2ISKTVbaYKec6kTXVlcb3DNHHIrvRwuCfBkNa-To/edit?usp=sharing
 
+<br>
+
+* 'Setup a local development environment in Windows for the Code Institute Diploma in Full Stack Web Development' by team member Neil: https://myprojects.plamersaurus.co.uk/
+<br>
+
+## Bugs and Glitches!
+<br>
+Our team member Stephen Dawson patiently talked us through the process of branching, pulling and merging using GitHub.
+For most of us, it was our first time doing this, and learning about merge conflicts, so this took some time to learn.
+<br>
+<br>
+
 ## Credits
 
-* [Be sure to credit any assets that are not yours](https://www.example.com)
-* [Member 1 Linkedin](https://www.linkedin.com)
-* [Member 2 Linkedin](https://www.linkedin.com)
-* [etc. etc.](https://www.example.com)
+* [Source material: the Child eating eggs](https://youtube/W2UaJdDGQAQ)
+* [Kaboom](https://kaboomjs.com/)
+* Source image from the Mandalorian was taken from the Irish Sun (https://www.thesun.ie/tv/6132470/the-mandalorian-baby-yoda-eats-eggs-theory/)
+* [GitHub documentation on managing access to projects in a team](https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-access-to-your-projects)
+* A big thank you to our Code Institute hackathon facilitator, Joy Zadan 
