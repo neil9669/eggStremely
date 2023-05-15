@@ -25,10 +25,12 @@ But he's not keen on you eating those eggs, either, so that's double trouble!
 
 **May The 4th Be With You...** 
 <br>
+<br>
 Live link for the game (deployed via GitHub pages): https://eggstremely.plamersaurus.co.uk/
+<br>
+<br>
+<br>
 
-<br>
-<br>
 ## Introduction
 <br>
 <br>
@@ -45,13 +47,12 @@ The brief was to design and code a game with the Star Wars theme for the Code In
 **Team members (CI students and alumni):**
 <br>
 
-* Stephen Dawson
-* Dario  
+* Stephen Dawson (https://www.linkedin.com/in/sdstephendawson/)
+* Dario Covella  (http://linkedin.com/in/dariocovella)
 * Neil
 * Oluwaseun Olawunmi Adeoye 
-* Peter Anny-Nzekwue (team leader),  
-* Farah Maria Rahman (scrum master)
-* Matt Stockman
+* Peter Anny-Nzekwue (team leader)
+* Farah Maria Rahman (scrum master) (https://www.linkedin.com/in/farahmr/)
 <br>
 <br>
 
@@ -132,15 +133,33 @@ B) Agreed Second Meeting
  iv) The primary obstacle will be the frog lady who will initially randomly move around the screen. With increased difficulty, she will get faster, she will start moving towards Baby Yoda, and/or the Mandalorian character will appear to also try to stop Baby Yoda. 
  v) If we have time, we may also try adding other obstacles
 
+<br>
+As suggested by Peter, we used KaboomJS to create the game (https://kaboomjs.com/) as it has lots of built-in methods to make development easier and faster
+<br>
 
-2. As suggested by Peter, we will use KaboomJS to create the game (https://kaboomjs.com/) as it has lots of built-in methods to make development easier and faster
+### FEATURES: 
 
-### PLANNED FEATURES: 
+1. Scoreboard - just to show score in the one game. scores won't be saved. 
+2. An infinite number of eggs rather than a set number in the jar, 
+3. Timer and Sabre that lights up for part of the bar, illustrating how many lives the player has
+<br>
+<br>
+THE IMAGE SHOWS THE GAME'S SCORE FEATURE, TIMER & NUMBER OF EGGS COLLECTED BEING RECORDED:
+<br>
+<br>
+<p align="center"><img src="./mediaREADME/images/timerScoreEggs.png" alt="features" width="50%"/></p>
+<br>
+<br>
 
-1. scoreboard - just to show score in the one game. scores won't be saved. 
-2. an infinite number of eggs rather than a set number in the jar, 
-3. the possibility of different coloured eggs granting the player a extra lives/ points.
-4. timer? Sabre the lights up for part of the bar showing how many lives are left
+<br>
+
+
+### FUTURE FEATURES:
+
+1. The possibility of different coloured eggs granting the player a extra lives/ points.
+2. Grogu the character to be able to use the Force in an advanced level of the game, a place bar would let him use this to get closer to the jar of eggs.
+<br>
+<br>
 
 ## EPICS / USER STORIES / AGILE GAME DEVELOPMENT
 
