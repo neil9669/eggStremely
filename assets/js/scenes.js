@@ -60,7 +60,55 @@ const generateScenes = () => {
   // add the game scene
   scene("game", ({ tl, score, eggs }) => {
     layers(["bg", "game", "ui"], "game");
-    add([text("game"), pos(width() / 2, height() / 10), origin("center")]);
+
+    // add background tiles
+    const generateFloorTiles = () => {
+      let positionX = 0;
+      let positionY = 70;
+      for (let i = 0; i < width(); i++) {
+        if (positionX > width()) {
+          positionX = 0;
+          positionY += 50;
+        }
+        add([
+          sprite("background-floor-tile"),
+          pos(positionX, positionY),
+          scale(0.747),
+          layer("bg"),
+        ]);
+
+        positionX += 50;
+      }
+    };
+
+    const generateWallTiles = () => {
+      let positionX = 0;
+      for (let i = 25; i < width(); i += 25) {
+        add([
+          sprite("background-wall-tile"),
+          pos(positionX, 0),
+          scale(0.747),
+          layer("bg"),
+        ]);
+
+        positionX += 50;
+      }
+    };
+
+    generateFloorTiles();
+    generateWallTiles();
+
+    // add the door
+    add([
+      sprite("background-door"),
+      pos(width() / 2 - 2, 0),
+      scale(0.747),
+      layer("bg"),
+      area(),
+      solid(),
+      "door",
+    ]);
+
     // spawn an enemy
     // the third argument for colour can either be one of
     // the kaboom colours or an rgb value - e.g. rgb(255, 0, 0)
