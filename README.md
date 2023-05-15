@@ -24,7 +24,26 @@ May The 4th Be With You.
  * Arrow keys - move 
  * Space bar - jump 
  * Left Shift - use force 
- * Eat all the soup to progress! 
+ * Eat all the soup to progress!
+  <br>
+  <br>
+## Users Stories
+
+* As a player I can see number of points I'm picking up clearly on the screen so that I can see how I'm doing and assess how many risks I can afford to take.
+* 
+
+
+
+
+
+
+
+
+
+
+
+
+
   
  ### Deployed link 
   
