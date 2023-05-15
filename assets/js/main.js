@@ -19,6 +19,11 @@ loadSprite("babyYoda", "grogu.png");
 loadSprite("background-floor-tile", "background-floor-tile.png");
 loadSprite("background-wall-tile", "background-wall-tile.png");
 loadSprite("background-door", "background-door.png");
+
+loadRoot("../../public/scene_background_images/");
+loadSprite("welcome-background", "welcome-screen.png");
+loadSprite("instructions-background", "instructions-screen.png");
+loadSprite("game-over-background", "game-over-screen.png");
 generateScenes();
 
 go("welcome");
