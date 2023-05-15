@@ -3,7 +3,7 @@ May The 4th Be With You.
   Hackathon:Team_3
 
 # **EggStremely: A Star Wars Game by the-Resistance ** 
- ![logo](./media/images/logo.png) 
+ ![logo](./mediaREADME/images/logo.png) 
  ## **Grogu's starving and you're his only hope!!** 
   
  **In a galaxy far far away...** 
@@ -17,7 +17,52 @@ May The 4th Be With You.
  If you're really smart, you might even get to see your elusive protector, the Mandalorian.  
  But he's not keen on you eating those eggs, either, so that's double trouble! 
   
- **May The 4th Be With You.**  
+**May The 4th Be With You...** 
+<br>
+Live link for the game (deployed via GitHub pages): https://eggstremely.plamersaurus.co.uk/
+
+<br>
+## **Introduction**
+<br>
+<br>
+**This is a README for a game designed by Hackathon:Team_3, also known by some in the galaxy as "the-Resistance**  
+<br>
+The brief was to create, design and code a game with the Star Wars theme for the Code Institute's May 2023 Hackathon. Our game, called 'Eggstremely', is based on events that take place in episode 2 of season 2 of The Mandalorian (a Star Wars series aired by the Disney+)
+<br>
+<br>
+**The time limit**: 5 days after the initial briefing at 18:00pm on Wednesday the 10th of May, 2023. 
+
+**Submission**: 15.00pm on Monday the 15th of May 2023.
+<br>
+
+**Team members (Student and alumni):**
+<br>
+
+* Stephen Dawson
+* Dario  
+* Neil
+* Oluwaseun Olawunmi Adeoye 
+* Peter Anny-Nzekwue (team leader),  
+* Farah Maria Rahman (scrum master)
+* Matt Stockman
+<br>
+<br>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   
  ## Controls & game rules 
   
