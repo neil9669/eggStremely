@@ -16,7 +16,8 @@ const generateScenes = () => {
     ]);
     const startText = add([
       text("Start Game"),
-      pos((width() / 4) * 3, height() / 2),
+      color(YELLOW),
+      pos(width() / 4, height() / 2),
       scale(0.5),
       origin("center"),
       area(),
@@ -24,7 +25,8 @@ const generateScenes = () => {
     ]);
     const instructionsText = add([
       text("How to play"),
-      pos((width() / 4) * 3, height() / 2 + 50),
+      color(YELLOW),
+      pos(width() / 4, height() / 2 + 100),
       scale(0.5),
       origin("center"),
       area(),
@@ -38,13 +40,25 @@ const generateScenes = () => {
     onClick("instructions-text", () => {
       go("instructions");
     });
+
+    onKeyDown("enter", () => {
+      go("game", { tl: 10, score: 0, eggs: 0 });
+    });
   });
 
   // add instructions screen
   scene("instructions", () => {
+    const instructionsBackground = add([
+      sprite("instructions-background"),
+      pos(0, 0),
+      origin("topleft"),
+      scale(1),
+    ]);
+
     add([
       text("Go back"),
-      pos(100, 525),
+      pos(600, 550),
+      color(YELLOW),
       scale(0.5),
       origin("left"),
       area(),
@@ -59,18 +73,75 @@ const generateScenes = () => {
   // add the game scene
   scene("game", ({ tl, score, eggs }) => {
     layers(["bg", "game", "ui"], "game");
-    add([text("game"), pos(width() / 2, height() / 10), origin("center")]);
+
+    // add background tiles
+    const generateFloorTiles = () => {
+      let positionX = 0;
+      let positionY = 70;
+      for (let i = 0; i < width(); i++) {
+        if (positionX > width()) {
+          positionX = 0;
+          positionY += 50;
+        }
+        add([
+          sprite("background-floor-tile"),
+          pos(positionX, positionY),
+          scale(0.747),
+          layer("bg"),
+        ]);
+
+        positionX += 50;
+      }
+    };
+
+    const generateWallTiles = () => {
+      let positionX = 0;
+      for (let i = 25; i < width(); i += 25) {
+        add([
+          sprite("background-wall-tile"),
+          pos(positionX, 0),
+          scale(0.747),
+          layer("bg"),
+        ]);
+
+        positionX += 50;
+      }
+    };
+
+    generateFloorTiles();
+    generateWallTiles();
+
+    // add the door
+    add([
+      sprite("background-door"),
+      pos(width() / 2 - 2, 0),
+      scale(0.747),
+      layer("bg"),
+      area(),
+      solid(),
+      "door",
+    ]);
+
     // spawn an enemy
     // the third argument for colour can either be one of
     // the kaboom colours or an rgb value - e.g. rgb(255, 0, 0)
-    spawnEnemy("frog-lady"); // spawn frog enemy
-    spawnEnemy("mandalorian"); // spawn Mando enemy
+    const frogLady = spawnEnemy("frog-lady", score); // spawn frog enemy
+    if (score >= 50) {
+      const mandalorian = spawnEnemy("mandalorian", score); // spawn Mando enemy
+    }
 
     // spawn the egg jar
-    spawnEggJar();
+    const eggJar = spawnEggJar();
 
     // spawn baby yoda
-    spawnBabyYoda();
+    const babyYoda = spawnBabyYoda();
+
+    // check for collision between babyYoda and eggJar
+    babyYoda.onCollide("egg-jar", () => {
+      score += 10;
+      burp({ volume: 0.5 });
+      go("game", { tl, score, eggs });
+    });
 
     // display score
     add([
@@ -100,8 +171,13 @@ const generateScenes = () => {
   });
 
   // add the lose scene
-  scene("lose", (score) => {
-    add([text("lose"), pos(width() / 2, height() / 2), origin("center")]);
+  scene("lose", () => {
+    const gameOverBackground = add([
+      sprite("game-over-background"),
+      pos(0, 0),
+      origin("topleft"),
+      scale(1),
+    ]);
   });
 };
 
