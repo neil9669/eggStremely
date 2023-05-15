@@ -33,7 +33,7 @@ const generateScenes = () => {
     ]);
 
     onClick("start-text", () => {
-      go("game", { tl: 10, score: 0, eggs: 0 });
+      go("game", { tl: 10, score: 0, livesLeft: 3 });
     });
 
     onClick("instructions-text", () => {
@@ -58,7 +58,7 @@ const generateScenes = () => {
   });
 
   // add the game scene
-  scene("game", ({ tl, score, eggs }) => {
+  scene("game", ({ tl, score, livesLeft }) => {
     layers(["bg", "game", "ui"], "game");
 
     // add background tiles
@@ -127,7 +127,17 @@ const generateScenes = () => {
     babyYoda.onCollide("egg-jar", () => {
       score += 10;
       burp({ volume: 0.5 });
-      go("game", { tl, score, eggs });
+      go("game", { tl, score, livesLeft });
+    });
+
+    // check for collision between babyYoda and enemy
+    babyYoda.onCollide("enemy", () => {
+      livesLeft -= 1;
+      if (livesLeft === 0) {
+        go("lose", score);
+      } else {
+        go("game", { tl, score, livesLeft });
+      }
     });
 
     // display score
@@ -148,9 +158,9 @@ const generateScenes = () => {
       scale(0.4),
     ]);
 
-    // Display eggs collected
+    // Display lives remaining
     add([
-      text("Eggs collected:" + parseInt(eggs)),
+      text("Lives left: " + parseInt(livesLeft)),
       pos(210, 0),
       layer("ui"),
       scale(0.4),
