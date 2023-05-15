@@ -8,6 +8,12 @@ import spawnBabyYoda from "./babyYoda.js";
 const generateScenes = () => {
   // add welcome screen
   scene("welcome", () => {
+    const welcomeBackground = add([
+      sprite("welcome-background"),
+      pos(0, 0),
+      origin("topleft"),
+      scale(1),
+    ]);
     const startText = add([
       text("Start Game"),
       pos((width() / 4) * 3, height() / 2),
@@ -23,13 +29,6 @@ const generateScenes = () => {
       origin("center"),
       area(),
       "instructions-text",
-    ]);
-
-    const babyYoda = add([
-      sprite("babyYoda"),
-      pos(width() / 3, height() / 2),
-      scale(5),
-      origin("center"),
     ]);
 
     onClick("start-text", () => {
@@ -60,75 +59,18 @@ const generateScenes = () => {
   // add the game scene
   scene("game", ({ tl, score, eggs }) => {
     layers(["bg", "game", "ui"], "game");
-
-    // add background tiles
-    const generateFloorTiles = () => {
-      let positionX = 0;
-      let positionY = 70;
-      for (let i = 0; i < width(); i++) {
-        if (positionX > width()) {
-          positionX = 0;
-          positionY += 50;
-        }
-        add([
-          sprite("background-floor-tile"),
-          pos(positionX, positionY),
-          scale(0.747),
-          layer("bg"),
-        ]);
-
-        positionX += 50;
-      }
-    };
-
-    const generateWallTiles = () => {
-      let positionX = 0;
-      for (let i = 25; i < width(); i += 25) {
-        add([
-          sprite("background-wall-tile"),
-          pos(positionX, 0),
-          scale(0.747),
-          layer("bg"),
-        ]);
-
-        positionX += 50;
-      }
-    };
-
-    generateFloorTiles();
-    generateWallTiles();
-
-    // add the door
-    add([
-      sprite("background-door"),
-      pos(width() / 2 - 2, 0),
-      scale(0.747),
-      layer("bg"),
-      area(),
-      solid(),
-      "door",
-    ]);
-
+    add([text("game"), pos(width() / 2, height() / 10), origin("center")]);
     // spawn an enemy
     // the third argument for colour can either be one of
     // the kaboom colours or an rgb value - e.g. rgb(255, 0, 0)
-    const frogLady = spawnEnemy("frog-lady", score); // spawn frog enemy
-    if (score >= 50) {
-      const mandalorian = spawnEnemy("mandalorian", score); // spawn Mando enemy
-    }
+    spawnEnemy("frog-lady"); // spawn frog enemy
+    spawnEnemy("mandalorian"); // spawn Mando enemy
 
     // spawn the egg jar
-    const eggJar = spawnEggJar();
+    spawnEggJar();
 
     // spawn baby yoda
-    const babyYoda = spawnBabyYoda();
-
-    // check for collision between babyYoda and eggJar
-    babyYoda.onCollide("egg-jar", () => {
-      score += 10;
-      burp({ volume: 0.5 });
-      go("game", { tl, score, eggs });
-    });
+    spawnBabyYoda();
 
     // display score
     add([
