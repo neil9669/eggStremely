@@ -22,7 +22,7 @@ May The 4th Be With You.
 Live link for the game (deployed via GitHub pages): https://eggstremely.plamersaurus.co.uk/
 
 <br>
-## **Introduction**
+**Introduction**
 <br>
 <br>
 **This is a README for a game designed by Hackathon:Team_3, also known by some in the galaxy as "the-Resistance**  
@@ -38,33 +38,21 @@ The brief was to create, design and code a game with the Star Wars theme for the
 **Team members (Student and alumni):**
 <br>
 
-* Stephen Dawson
-* Dario  
-* Neil
-* Oluwaseun Olawunmi Adeoye 
+
+ 
 * Peter Anny-Nzekwue (team leader),  
 * Farah Maria Rahman (scrum master)
-* Matt Stockman
+* Stephen Dawson
+* Niel
+* Oluwaseun Adeoye
+* Matt 
 <br>
 <br>
 
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-  
- ## Controls & game rules 
+  ## Controls & game rules 
   
  * Arrow keys - move 
  * Space bar - jump 
@@ -72,6 +60,7 @@ The brief was to create, design and code a game with the Star Wars theme for the
  * Eat all the soup to progress!
   <br>
   <br>
+  
 ## Users Stories
 
 * As a player I can see number of points I'm picking up clearly on the screen so that I can see how I'm doing and assess how many risks I can afford to take.
@@ -92,7 +81,7 @@ The brief was to create, design and code a game with the Star Wars theme for the
   
  ### Deployed link 
   
- [Click here to play!](https://www.example.com) 
+ [Click here to play!](https://code-institute-room.slack.com/archives/D0571S40Z0F/p1684155090481289?thread_ts=1684152985.364109&cid=D0571S40Z0F)
   
  (If the game is not browser based, this section should explain to users how to setup/install/run the game. This should be easy for the judges to follow!) 
   
