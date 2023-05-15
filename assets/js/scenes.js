@@ -8,9 +8,16 @@ import spawnBabyYoda from "./babyYoda.js";
 const generateScenes = () => {
   // add welcome screen
   scene("welcome", () => {
+    const welcomeBackground = add([
+      sprite("welcome-background"),
+      pos(0, 0),
+      origin("topleft"),
+      scale(1),
+    ]);
     const startText = add([
       text("Start Game"),
-      pos((width() / 4) * 3, height() / 2),
+      color(YELLOW),
+      pos(width() / 4, height() / 2),
       scale(0.5),
       origin("center"),
       area(),
@@ -18,18 +25,12 @@ const generateScenes = () => {
     ]);
     const instructionsText = add([
       text("How to play"),
-      pos((width() / 4) * 3, height() / 2 + 50),
+      color(YELLOW),
+      pos(width() / 4, height() / 2 + 100),
       scale(0.5),
       origin("center"),
       area(),
       "instructions-text",
-    ]);
-
-    const babyYoda = add([
-      sprite("babyYoda"),
-      pos(width() / 3, height() / 2),
-      scale(5),
-      origin("center"),
     ]);
 
     onClick("start-text", () => {
@@ -39,13 +40,25 @@ const generateScenes = () => {
     onClick("instructions-text", () => {
       go("instructions");
     });
+
+    onKeyDown("enter", () => {
+      go("game", { tl: 10, score: 0, eggs: 0 });
+    });
   });
 
   // add instructions screen
   scene("instructions", () => {
+    const instructionsBackground = add([
+      sprite("instructions-background"),
+      pos(0, 0),
+      origin("topleft"),
+      scale(1),
+    ]);
+
     add([
       text("Go back"),
-      pos(100, 525),
+      pos(600, 550),
+      color(YELLOW),
       scale(0.5),
       origin("left"),
       area(),
@@ -168,8 +181,13 @@ const generateScenes = () => {
   });
 
   // add the lose scene
-  scene("lose", (score) => {
-    add([text("lose"), pos(width() / 2, height() / 2), origin("center")]);
+  scene("lose", () => {
+    const gameOverBackground = add([
+      sprite("game-over-background"),
+      pos(0, 0),
+      origin("topleft"),
+      scale(1),
+    ]);
   });
 };
 
