@@ -142,9 +142,7 @@ B) Agreed Second Meeting
 3. the possibility of different coloured eggs granting the player a extra lives/ points.
 4. timer? Sabre the lights up for part of the bar showing how many lives are left
 
-## EPICS / USER STORIES
-
-AGILE GAME DEVELOPMENT / EPICS / USER STORIES
+## EPICS / USER STORIES / AGILE GAME DEVELOPMENT
 
 Ideas for structure of this came from: https://blog.agilegamedevelopment.com/2016/04/user-story-mapping-for-games-example.html
 
@@ -196,6 +194,11 @@ USER STORIES WITH 'PLAYER':
 
 * As a player I can see the aim and rules of the game at the start so that I can start playing with minimum fuss and enjoy getting into the game.
 
+<br>
+
+ALL USER STORIES WERE TESTED AND RESULTS POSTED ON KANBAN BOARD
+<br>
+We communicated via the comments attached to each issue.
 <br>
 
 ## Controls & game rules
