@@ -1,4 +1,4 @@
-# <img src="./mediaREADME/images/logo.png" alt="logo" width="20px" height="18px"/>  <em></em>EggStremely</em>: A Star Wars Game  <img src="./mediaREADME/images/logo.png" alt="logo" width="20px" height="18px"/>
+# <img src="./mediaREADME/images/logo.png" alt="logo" width="30px" height="24px"/>  <em></em>EggStremely</em>: A Star Wars Game  <img src="./mediaREADME/images/logo.png" alt="logo" width="30px" height="24px"/>
 
 ## by **theResistance**
 
