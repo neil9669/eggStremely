@@ -1,4 +1,4 @@
-# <img src="./mediaREADME/images/logo.png" alt="logo" width="30px" height="24px"/>  <em></em>EggStremely</em>: A Star Wars Game  <img src="./mediaREADME/images/logo.png" alt="logo" width="30px" height="24px"/>
+# <img src="./mediaREADME/images/logo.png" alt="logo" width="30px" height="24px"/>  <em></em>Eggscapades of the Child</em>: A Star Wars Game  <img src="./mediaREADME/images/logo.png" alt="logo" width="30px" height="24px"/>
 
 ## by **theResistance**
 
@@ -13,7 +13,7 @@
 <br>    
 
 
-The child, Grogu, is aboard a ship with the Frog Lady and her jar of delicious eggs. He's not meant to eat them, but they taste so good!
+The child is aboard a ship with the Frog Lady and her jar of delicious eggs. He's not meant to eat them, but they taste so good!
 
 
 Can you grab as many eggs as you can from the jar, when the Frog lady isn't looking? 
