@@ -178,12 +178,22 @@ const generateScenes = () => {
   });
 
   // add the lose scene
-  scene("lose", () => {
+  scene("lose", (score) => {
+    layers(["bg", "game", "ui"], "game");
     const gameOverBackground = add([
       sprite("game-over-background"),
       pos(0, 0),
       origin("topleft"),
       scale(1),
+      layer("bg")
+    ]);
+
+    // display score
+    add([
+      text(`Your Score:${score}`),
+      pos(width()*0.25, height()*0.3),
+      layer("ui"),
+      scale(0.8),
     ]);
   });
 };
