@@ -84,6 +84,26 @@ The brief was to create, design and code a game with the Star Wars theme for the
  [Click here to play!](https://code-institute-room.slack.com/archives/D0571S40Z0F/p1684155090481289?thread_ts=1684152985.364109&cid=D0571S40Z0F)
   
  (If the game is not browser based, this section should explain to users how to setup/install/run the game. This should be easy for the judges to follow!) 
+ 
+ 
+ 
+**Link to html, css and kaboom:**
+  <!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eggStremely</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <canvas id="main-game-canvas"></canvas>
+    <script src="https://unpkg.com/kaboom/dist/kaboom.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>
+
   
  ## Resources created 
   
