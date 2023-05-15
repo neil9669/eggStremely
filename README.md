@@ -1,57 +1,21 @@
 # <img src="./mediaREADME/images/logo.png" alt="logo" width="20px" height="18px"/> <em></em>EggStremely</em>: A Star Wars Game <img src="./mediaREADME/images/logo.png" alt="logo" width="20px" height="18px"/>
 
-## by **theResistance**
+# **EggStremely: A Star Wars Game by the-Resistance **
 
-<br>
+![logo](./media/images/logo.png)
 
-<br>
+## **Grogu's starving and you're his only hope!!**
 
 **In a galaxy far far away...**
 
-**Grogu wants eggs, and you're his only hope!!**
-
-<br>
-
 The child, Grogu, is aboard a ship with the Frog Lady and her jar of delicious eggs. He's not meant to eat them, but they taste so good!
 
-Can you grab as many eggs as you can from the jar, when the Frog lady isn't looking?
-Be careful, or she'll catch you!
-If you're really smart, you might even get to see your elusive protector, the Mandalorian.
-But he's not keen on you eating those eggs, either, so that's double trouble!
+Can you grab as many eggs as you can from the jar, when the Frog lady isn't looking?  
+ Be careful, or she'll catch you!
+If you're really smart, you might even get to see your elusive protector, the Mandalorian.  
+ But he's not keen on you eating those eggs, either, so that's double trouble!
 
-<br>
-
-**May The 4th Be With You...**
-<br>
-Live link for the game (deployed via GitHub pages): https://eggstremely.plamersaurus.co.uk/
-
-<br>
-<br>
-## Introduction
-<br>
-<br>
-This is a README for a game designed by Team 3, also known by some in the galaxy as "theResistance".  
-<br>
-The brief was to design and code a game with the Star Wars theme for the Code Institute's May 2023 Hackathon. Our game, called 'Eggstremely', is based on events that take place in episode 2 of season 2 of The Mandalorian (a Star Wars series aired by the Disney+)
-<br>
-<br>
-**The time limit**: 5 days after the initial briefing at 18:00 on Wednesday the 10th of May, 2023.
-
-**Submission**: 3pm on Monday the 15th of May.
-<br>
-
-**Team members (CI students and alumni):**
-<br>
-
-- Stephen Dawson
-- Dario
-- Neil
-- Oluwaseun Olawunmi Adeoye
-- Peter Anny-Nzekwue (team leader),
-- Farah Maria Rahman (scrum master)
-- Matt Stockman
-  <br>
-  <br>
+**May The 4th Be With You.**
 
 ## Controls & game rules
 
@@ -62,13 +26,21 @@ The brief was to design and code a game with the Star Wars theme for the Code In
 
 ### Deployed link
 
-[Click here to play!](https://eggstremely.plamersaurus.co.uk/)
+[Click here to play!](https://www.example.com)
 
-The game is browser based and deployed via GitHub pages
+(If the game is not browser based, this section should explain to users how to setup/install/run the game. This should be easy for the judges to follow!)
 
 ## Resources created
 
 - 'Using Terminal, Git and Github' by team member Stephen Dawson: https://docs.google.com/document/d/1NGC2ISKTVbaYKec6kTXVlcb3DNHHIrvRwuCfBkNa-To/edit?usp=sharing
+
+- 'Using sound audio effects' created by Neil and Stephen Dawson:
+  https://code-institute-room.slack.com/files/U050ACTDD41/F058D8U6MUY/frog-lady-double.mp3
+  https://code-institute-room.slack.com/files/U050ACTDD41/F05791XKBE3/this-is-the-way-mando.mp3
+  https://code-institute-room.slack.com/files/U050ACTDD41/F057S2TQ1FE/grogu-1.mp3
+
+- 'Using figma to wireframe' created by team member Stephen Dawson, Dario, Farah, Neil and Oluwaseun as contributor:
+  https://www.figma.com/file/iAdS8KU7bo90WYfBf4VAeZ/Grogu's-Eats-Eggs?type=design&node-id=0-1&t=FxbdyMbdHLoxRLvZ-0
 
 ## Credits
 
