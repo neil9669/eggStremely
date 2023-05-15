@@ -3,6 +3,7 @@ import generateScenes from "./scenes.js";
 // initialize kaboom context
 kaboom({
   background: [0, 0, 255],
+  burp: true,
   width: 800,
   height: 600,
   canvas: document.getElementById("main-game-canvas"), // select canvas element
