@@ -34,7 +34,7 @@ const generateScenes = () => {
     ]);
 
     onClick("start-text", () => {
-      go("game", { tl: 10, score: 0, livesLeft: 3 });
+      go("game", { timeLeft: 10, score: 0, livesLeft: 3 });
     });
 
     onClick("instructions-text", () => {
@@ -42,7 +42,7 @@ const generateScenes = () => {
     });
 
     onKeyDown("enter", () => {
-      go("game", { tl: 10, score: 0, eggs: 0 });
+      go("game", { timeLeft: 10, score: 0, eggs: 0 });
     });
   });
 
@@ -152,7 +152,7 @@ const generateScenes = () => {
         go("game", { timeLeft, score, livesLeft });
       }
     });
-
+    
     // display score
     add([
       text(`Score:${score}`),
@@ -160,13 +160,39 @@ const generateScenes = () => {
       layer("ui"),
       scale(0.4),
     ]);
-    // Display time left
+
+    // Display Time left text
     add([
-      text(`Time left:${timeLeft}`),
-      pos(width*0.7, 0),
+      text("Time left:"),
+      pos(width()*0.7, 0),
       layer("ui"),
       scale(0.4),
     ]);
+    
+    // Display time left
+    const timer = add([
+      text("0"),
+      pos(width()*0.93, 0),
+      layer("ui"),
+        {
+          time: timeLeft,
+        },  
+      scale(0.4),
+    ])
+
+    // update timer
+    timer.action(() => {
+      timer.time -= dt()
+      timer.text = timer.time.toFixed(0)
+      if (livesLeft === 0) {
+        go("lose", score);
+      } else if (timer.time <= 0) { 
+        timer.time = 0,
+        livesLeft -= 1,
+        go("game", { timeLeft, score, livesLeft});
+      }
+    })
+
 
     // Display lives remaining
     add([
