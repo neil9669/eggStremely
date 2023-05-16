@@ -16,6 +16,19 @@ const spawnEnemy = (enemySprite, score) => {
     enemyHeight = 61;
   }
 
+  // Add sound for first appearance of each enemy
+  if (score == 0) {
+    wait(1, () => {
+      play("frog-lady-double", {
+        volume: 1,
+      });
+    });
+  } else if (score == 50) {
+    play("mando-this-is-the-way", {
+      volume: 1,
+    });
+  }
+
   const enemy = add([
     sprite(enemySprite),
     area(),

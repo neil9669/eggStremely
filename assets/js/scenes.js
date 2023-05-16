@@ -134,7 +134,7 @@ const generateScenes = () => {
     const eggJar = spawnEggJar();
 
     // spawn baby yoda
-    const babyYoda = spawnBabyYoda();
+    const babyYoda = spawnBabyYoda(score);
 
     // check for collision between babyYoda and eggJar
     babyYoda.onCollide("egg-jar", () => {
