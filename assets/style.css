@@ -6,6 +6,7 @@
 
 body {
   overflow: hidden;
+  background: url("../public/starry-sky.webp") repeat center center fixed;
 }
 
 #main-game-canvas {
