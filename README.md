@@ -10,6 +10,10 @@ May The 4th Be With You.
   
   
  The child, Grogu, is aboard a ship with the Frog Lady and her jar of delicious eggs. He's not meant to eat them, but they taste so good! 
+ 
+ https://code-institute-room.slack.com/files/U0532RRJDD5/F057CLVDW5V/screenshot_20230515-143226.png
+  
+  https://www.figma.com/file/iAdS8KU7bo90WYfBf4VAeZ/Grogu's-Eats-Eggs?type=design&node-id=0%3A1&t=uEbQf5dnpTzt8hvV-1
   
   
  Can you grab as many eggs as you can from the jar, when the Frog lady isn't looking?  
@@ -37,21 +41,24 @@ The brief was to create, design and code a game with the Star Wars theme for the
 
 **Team members (Student and alumni):**
 <br>
-
-
  
-* Peter Anny-Nzekwue (team leader),  
+* Peter Anny-Nzekwue (team leader)
+  https://github.com/panzek 
 * Farah Maria Rahman (scrum master)
+https://github.com/farah-maria
 * Stephen Dawson
+https://www.github.com/stephendawsondev
+
 * Niel
+
 * Oluwaseun Adeoye
-* Matt 
+https://github.com/57Esther
+* Matt Stockman
+ https://github.com/mjjstockman
 <br>
 <br>
 
- 
- 
- 
+
   ## Controls & game rules 
   
  * Arrow keys - move 
@@ -67,21 +74,10 @@ The brief was to create, design and code a game with the Star Wars theme for the
 * 
 
 
-
-
-
-
-
-
-
-
-
-
-
-  
  ### Deployed link 
   
- [Click here to play!](https://code-institute-room.slack.com/archives/D0571S40Z0F/p1684155090481289?thread_ts=1684152985.364109&cid=D0571S40Z0F)
+ [Click here to play!](https://eggstremely.plamersaurus.co.uk/)
+
   
  (If the game is not browser based, this section should explain to users how to setup/install/run the game. This should be easy for the judges to follow!) 
  
