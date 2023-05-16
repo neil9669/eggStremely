@@ -18,7 +18,7 @@ const spawnBabyYoda = (score) => {
       volume: 1,
     });
   }
-
+  
   // Handle keyboard input
   onKeyDown(MOVE_LEFT_KEY, () => {
     if (babyYoda.pos.x > 0) {

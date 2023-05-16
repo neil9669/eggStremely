@@ -28,7 +28,7 @@ const spawnEnemy = (enemySprite, score) => {
       volume: 1,
     });
   }
-
+  
   const enemy = add([
     sprite(enemySprite),
     area(),

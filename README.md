@@ -1,6 +1,26 @@
-# <img src="./mediaREADME/images/logo.png" alt="logo" width="20px" height="18px"/> <em></em>EggStremely</em>: A Star Wars Game <img src="./mediaREADME/images/logo.png" alt="logo" width="20px" height="18px"/>
+# EggStremely-The-Resistance
+May The 4th Be With You. 
+  Hackathon:Team_3
 
-# **EggStremely: A Star Wars Game by the-Resistance **
+# **EggStremely: A Star Wars Game by the-Resistance ** 
+ ![logo](./mediaREADME/images/logo.png) 
+ ## **Grogu's starving and you're his only hope!!** 
+  
+ **In a galaxy far far away...** 
+  
+  
+ The child, Grogu, is aboard a ship with the Frog Lady and her jar of delicious eggs. He's not meant to eat them, but they taste so good! 
+  
+  
+ Can you grab as many eggs as you can from the jar, when the Frog lady isn't looking?  
+ Be careful, or she'll catch you! 
+ If you're really smart, you might even get to see your elusive protector, the Mandalorian.  
+ But he's not keen on you eating those eggs, either, so that's double trouble! 
+  
+**May The 4th Be With You...** 
+<br>
+Live link for the game (deployed via GitHub pages): https://eggstremely.plamersaurus.co.uk/
+
 
 <br>
 **Introduction**
@@ -11,6 +31,7 @@
 The brief was to create, design and code a game with the Star Wars theme for the Code Institute's May 2023 Hackathon. Our game, called 'Eggstremely', is based on events that take place in episode 2 of season 2 of The Mandalorian (a Star Wars series aired by the Disney+)
 <br>
 <br>
+
 **The time limit**: 5 days after the initial briefing at 18:00pm on Wednesday the 10th of May, 2023.
 
 ## **Grogu's starving and you're his only hope!!**
