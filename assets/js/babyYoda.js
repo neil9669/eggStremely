@@ -1,4 +1,4 @@
-const spawnBabyYoda = () => {
+const spawnBabyYoda = (score) => {
   const babyYoda = add([sprite("babyYoda"), area(), pos(100, 500), "babyYoda"]);
 
   const babyYodaWidth = 70;
@@ -12,6 +12,13 @@ const spawnBabyYoda = () => {
   const MOVE_UP_KEY = "up";
   const MOVE_DOWN_KEY = "down";
 
+  // Add sound for when babyYoda first appears
+  if (score == 0) {
+    play("grogu-1", {
+      volume: 1,
+    });
+  }
+  
   // Handle keyboard input
   onKeyDown(MOVE_LEFT_KEY, () => {
     if (babyYoda.pos.x > 0) {

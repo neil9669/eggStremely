@@ -134,7 +134,8 @@ const generateScenes = () => {
     const eggJar = spawnEggJar();
 
     // spawn baby yoda
-    const babyYoda = spawnBabyYoda();
+    const babyYoda = spawnBabyYoda(score);
+
 
     // check for collision between babyYoda and eggJar
     babyYoda.onCollide("egg-jar", () => {
@@ -152,7 +153,7 @@ const generateScenes = () => {
         go("game", { timeLeft, score, livesLeft });
       }
     });
-    
+
     // display score
     add([
       text(`Score:${score}`),
@@ -192,7 +193,6 @@ const generateScenes = () => {
         go("game", { timeLeft, score, livesLeft});
       }
     })
-
 
     // Display lives remaining
     add([

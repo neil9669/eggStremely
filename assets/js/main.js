@@ -24,6 +24,12 @@ loadRoot("../../public/scene_background_images/");
 loadSprite("welcome-background", "welcome-screen.png");
 loadSprite("instructions-background", "instructions-screen.png");
 loadSprite("game-over-background", "game-over-screen.png");
+
+loadRoot("../../public/sounds/");
+loadSound("frog-lady-double", "frog-lady-double.mp3");
+loadSound("mando-this-is-the-way", "mando-this-is-the-way.mp3");
+loadSound("grogu-1", "grogu-1.mp3");
+
 generateScenes();
 
 go("welcome");
