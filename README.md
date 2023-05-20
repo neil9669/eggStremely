@@ -31,7 +31,9 @@ Live link for the game (deployed via GitHub pages): https://eggscapades.plamersa
 <br>
 <br>
 
+
 ## Introduction
+
 <br>
 <br>
 This is a README for a game designed by Team 3, also known by some in the galaxy as "theResistance".  
@@ -39,7 +41,7 @@ This is a README for a game designed by Team 3, also known by some in the galaxy
 The brief was to design and code a game with the Star Wars theme for the Code Institute's May 2023 Hackathon. Our game, called 'Eggstremely', is based on events that take place in episode 2 of season 2 of The Mandalorian (a Star Wars series aired by the Disney+)
 <br>
 <br>
-**The time limit**: 5 days after the initial briefing at 18:00 on Wednesday the 10th of May, 2023. 
+**Time limit**: 5 days after the initial briefing at 18:00 on Wednesday the 10th of May, 2023. 
 
 **Submission**: 3pm on Monday the 15th of May.
 <br>
@@ -280,10 +282,15 @@ We communicated via the comments attached to each issue.
 * 'Using Terminal, Git and Github' by team member Stephen Dawson: https://docs.google.com/document/d/1NGC2ISKTVbaYKec6kTXVlcb3DNHHIrvRwuCfBkNa-To/edit?usp=sharing
 <br>
 
- * 'Using sound audio effects' created by Neil and Stephen Dawson:
+## Resources created
+
+* 'Using Terminal, Git and Github' by team member Stephen Dawson: https://docs.google.com/document/d/1NGC2ISKTVbaYKec6kTXVlcb3DNHHIrvRwuCfBkNa-To/edit?usp=sharing
+
+* 'Using sound audio effects' created by Neil and Stephen Dawson:
   https://code-institute-room.slack.com/files/U050ACTDD41/F058D8U6MUY/frog-lady-double.mp3
   https://code-institute-room.slack.com/files/U050ACTDD41/F05791XKBE3/this-is-the-way-mando.mp3
   https://code-institute-room.slack.com/files/U050ACTDD41/F057S2TQ1FE/grogu-1.mp3
+
 <br>  
 
  * 'Using figma to wireframe' created by team member Stephen Dawson, Dario, Farah, Neil and Oluwaseun as contributor: 
@@ -310,3 +317,11 @@ For some of us, it was our first time doing this, and learning about merge confl
 * [GitHub documentation on managing access to projects in a team](https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-access-to-your-projects)
 
 * A big thank you to our Code Institute hackathon facilitator, Joy Zadan 
+
+* 'Using figma to wireframe' created by team member Stephen Dawson, Dario, Farah, Neil and Oluwaseun as contributor:
+  https://www.figma.com/file/iAdS8KU7bo90WYfBf4VAeZ/Grogu's-Eats-Eggs?type=design&node-id=0-1&t=FxbdyMbdHLoxRLvZ-0
+
+<br>
+<br>
+
+END
