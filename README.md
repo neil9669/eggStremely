@@ -1,9 +1,9 @@
-# <img src="./mediaREADME/images/logo.png" alt="logo" width="30px" height="24px"/>  <em></em>Eggscapades of the Child</em>: A Star Wars Game  <img src="./mediaREADME/images/logo.png" alt="logo" width="30px" height="24px"/>
+# <img src="./assets/readmeImages/logo.png" alt="logo" width="30px" height="24px"/>  <em></em>Eggscapades of the Child</em>: A Star Wars Game  <img src="./assets/readmeImages/logo.png" alt="logo" width="30px" height="24px"/>
 
 ## by **theResistance**
 
 <br>
-<p align="center"><img src="./mediaREADME/images/CI.png" alt="CI hackathon publicity image" width="50%"/></p>
+<p align="center"><img src="./assets/readmeImages/CI.png" alt="CI hackathon publicity image" width="60%"/></p>
 <br>
 
 **In a galaxy far far away...**
@@ -94,20 +94,20 @@ The project focus is realistic, and has an overall sense of completeness.
 1. This was the first visualisation of the game, in the initial stages when the player is only up against the Frog Lady (by Stephen Dawson):
 
 <br>
-<p align="center"><img src="./mediaREADME/images/earlyIdea.png" alt="early mockup of game frame" width="50%"/></p>
+<p align="center"><img src="./assets/readmeImages/earlyIdea.png" alt="early mockup of game frame" width="60%"/></p>
 <br>
 <br>
 
 2. All of the characters were then more fully fleshed out using photoshop (character images by Dario) and played around with in Figma:
 
 <br>
-<p align="center"><img src="./mediaREADME/images/characters.png" alt="mockup of characters" width="50%"/></p>
+<p align="center"><img src="./assets/readmeImages/characters.png" alt="mockup of characters" width="60%"/></p>
 <br>
 <br>
 
 3. Mockup of the main game in action: 
 <br>
-<p align="center"><img src="./mediaREADME/images/maingameFrame.png" alt="mockup of game action" width="50%"/></p>
+<p align="center"><img src="./assets/readmeImages/maingameFrame.png" alt="mockup of game action" width="60%"/></p>
 <br>
 <br>
 
@@ -153,11 +153,11 @@ As suggested by Peter, we used KaboomJS to create the game (https://kaboomjs.com
 THE IMAGE BELOW SHOWS THE GAME'S SCORE FEATURE, TIMER & NUMBER OF EGGS COLLECTED BEING RECORDED:
 <br>
 <br>
-<p align="center"><img src="./mediaREADME/images/timerScoreEggs.png" alt="features" width="50%"/></p>
+<p align="center"><img src="./assets/readmeImages/timerScoreEggs.png" alt="features" width="60%"/></p>
 <br>
 THE IMAGE BELOW SHOWS THE START SCREEN
 <br>
-<p align="center"><img src="./mediaREADME/images/start.png" alt="features" width="50%"/></p>
+<p align="center"><img src="../assets/readmeImages/start.png" alt="features" width="60%"/></p>
 <br>
 
 <br>
@@ -263,7 +263,7 @@ End-user feedback: "It's cool. It's like snake meets the DVD screensaver! A miss
 We communicated via the comments attached to each issue.
 <br>
 <br>
-<p align="center"><img src="./mediaREADME/images/testKanban.png" alt="testing" width="50%"/></p>
+<p align="center"><img src="./assets/readmeImages/testKanban.png" alt="testing" width="60%"/></p>
 <br>
 
 <br>
