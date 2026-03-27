@@ -158,6 +158,7 @@ const generateScenes = () => {
     add([
       text(`Score:${score}`),
       pos(width() * 0.01, 0),
+      pos(width() * 0.01, 0),
       layer("ui"),
       scale(0.4),
     ]);
@@ -198,6 +199,7 @@ const generateScenes = () => {
     add([
       text(`Lives left:${livesLeft}`),
       pos(width() * 0.3, 0),
+      pos(width() * 0.3, 0),
       layer("ui"),
       scale(0.4),
     ]);
@@ -212,11 +214,14 @@ const generateScenes = () => {
       origin("topleft"),
       scale(1),
       layer("bg"),
+      layer("bg"),
     ]);
 
     // display score
     add([
       text(`Your Score:${score}`),
+      pos(width() * 0.25, height() * 0.3),
+      color(YELLOW),
       pos(width() * 0.25, height() * 0.3),
       color(YELLOW),
       layer("ui"),
@@ -234,7 +239,7 @@ const generateScenes = () => {
     ]);
 
     onClick("play-again-text", () => {
-      go("game", { tl: 10, score: 0, livesLeft: 3 });
+      go("game", { timeLeft: 10, score: 0, livesLeft: 3 });
     });
   });
 };
